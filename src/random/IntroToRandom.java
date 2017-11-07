@@ -11,12 +11,17 @@ import java.util.Random;
 
 public class IntroToRandom {
 	public static void main(String[] args) {
-		int r = 0;
 		
+		int r = new Random().nextInt(100);
+		System.out.println(r); 
+		r = new Random().nextInt(75 - 25) + 25;
+		System.out.println(r); 
+		r = new Random().nextInt(311) - 222;
+		System.out.println(r); 
 		//2. Now make r random. 
 		//   Create an object of the Random class
 		//   Hint: new Random().nextInt()
-
+		
 		//3. Limit the random number between 0 and 100
 
 		//4. Limit the random number between 25 and 75. Hint: (highest value - lowest value) + lowest value
@@ -25,6 +30,6 @@ public class IntroToRandom {
 
 
 		
-		System.out.println(r); 
+		
 	}
 }
